@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activites.EditUserProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/DarkBlue">
+
+        <com.example.justdraw.widget.Segow_UI_Bold_Font
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/editprofile"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/move_left"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_left"
+            android:padding="12dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/select_image"
+        android:layout_below="@id/header"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circle_user_pic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/blue_circle"
+            android:padding="10dp"
+            android:src="@drawable/ic_boy_new"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:padding="5dp"
+            android:background="@color/DarkBlue"
+            android:src="@drawable/camera"/>
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_below="@id/select_image"
+        android:id="@+id/filledTextField"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Name"
+        android:layout_margin="50dp"
+        android:padding="0dp"
+        app:hintTextColor="@color/DarkBlue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/done_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/done"
+        android:textColor="@color/white"
+        android:background="@drawable/solid_square_button"/>
+</RelativeLayout>

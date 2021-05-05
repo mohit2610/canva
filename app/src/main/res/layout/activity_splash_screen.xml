@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activites.SplashScreenActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/canva_logo"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginStart="10sp">
+
+            <com.example.justdraw.widget.Segow_UI_Bold_Font
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Canva"
+                android:textSize="28sp"
+                android:textColor="@color/DarkBlue"/>
+            <com.example.justdraw.widget.Segow_UI_Bold_Font
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/JustDraw"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

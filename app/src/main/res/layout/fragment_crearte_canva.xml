@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.CrearteCanvaFragment">
+
+    <com.example.justdraw.widget.Segow_UI_Bold_Font
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Choose"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textSize="22sp"
+        android:textColor="@color/DarkBlue"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/blank_canvas"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/off_white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.example.justdraw.widget.Segow_UI_Bold_Font
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Canvas"
+                    android:textColor="@color/text"
+                    android:textSize="22sp"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/image_layout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/village_scene"
+                    android:scaleType="centerCrop"
+                    android:alpha="0.4">
+
+                </ImageView>
+                <com.example.justdraw.widget.Segow_UI_Bold_Font
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Image"
+                    android:textColor="@color/text"
+                    android:textSize="22sp"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Collage_layout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/collage"
+                    android:scaleType="centerCrop"
+                    android:alpha="0.4">
+
+                </ImageView>
+                <com.example.justdraw.widget.Segow_UI_Bold_Font
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Collage"
+                    android:textColor="@color/text"
+                    android:textSize="22sp"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</RelativeLayout>

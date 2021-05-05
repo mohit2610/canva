@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activites.SavedDrawingActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/move_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_left_black"/>
+
+        <com.example.justdraw.widget.Segow_UI_Bold_Font
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="@string/Post"
+            android:textSize="22sp"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/drawing_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_margin="20dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        app:cardElevation="5dp">
+
+        <ImageView
+            android:id="@+id/drawing_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/post_drawing"
+            android:layout_width="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_height="50dp"
+            android:text="@string/Post"
+            android:background="@drawable/solid_square_button"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+</RelativeLayout>

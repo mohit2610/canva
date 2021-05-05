@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Activites.CanvasActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/black">
+
+        <ImageView
+            android:id="@+id/move_left"
+            android:layout_width="50dp"
+            android:layout_height="50sp"
+            android:padding="10dp"
+            android:src="@drawable/ic_left"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:layout_marginEnd="10dp">
+
+            <ImageView
+                android:id="@+id/undo"
+                android:layout_width="50dp"
+                android:layout_height="50sp"
+                android:padding="10dp"
+                android:src="@drawable/ic_undo"/>
+            <ImageView
+                android:id="@+id/redo"
+                android:layout_width="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="50sp"
+                android:padding="10dp"
+                android:src="@drawable/ic_redo"
+                android:layout_marginStart="10dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/save"
+            android:layout_width="50dp"
+            android:layout_height="50sp"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_right_arrow_circle"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_above="@id/b_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.slider.RangeSlider
+            android:id="@+id/rangebar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+    <com.example.justdraw.Utilities.DrawView
+        android:id="@+id/draw_view"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="@color/white"
+        android:layout_margin="20dp"
+        android:layout_centerInParent="true" />
+    <RelativeLayout
+        android:id="@+id/b_layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black">
+
+        <LinearLayout
+            android:id="@+id/color_picker"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginStart="20dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_color_circle"/>
+            <com.example.justdraw.widget.Segow_UI_Semi_Font
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/color"
+                android:textColor="@color/white"
+                android:textSize="10sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="10dp">
+
+            <LinearLayout
+                android:id="@+id/brush"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginEnd="20dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_paint_brush_new"/>
+                <com.example.justdraw.widget.Segow_UI_Semi_Font
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Brush"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/eraser"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginStart="20dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_eraser"/>
+                <com.example.justdraw.widget.Segow_UI_Semi_Font
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Eraser"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sticker"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_happy"/>
+            <com.example.justdraw.widget.Segow_UI_Semi_Font
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Stickers"
+                android:textColor="@color/white"
+                android:textSize="10sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/sticker_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true">
+
+        <com.example.justdraw.widget.Segow_UI_Bold_Font
+            android:layout_width="200dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Sorry for the Inconvenience This feature will available soon"
+            />
+
+        <com.example.justdraw.widget.Segow_UI_Bold_Font
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:textColor="@color/DarkBlue"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:padding="20sp"/>
+    </RelativeLayout>
+</RelativeLayout>

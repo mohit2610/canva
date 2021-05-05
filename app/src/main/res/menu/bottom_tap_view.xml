@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home__1_"
+        android:title="@string/Home"/>
+    <item
+        android:id="@+id/create_canva"
+        android:enabled="true"
+        android:icon="@drawable/ic_plus_black"
+        android:title="@string/Canva"/>
+    <item
+        android:id="@+id/Profile"
+        android:enabled="true"
+        android:icon="@drawable/ic_user__3_"
+        android:title="@string/Profile"/>
+</menu>

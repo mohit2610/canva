@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Canva</string>
+    <string name="Canva">Canva</string>
+    <string name="JustDraw">Just Paint</string>
+    <string name="MobileNumber">Mobile no.</string>
+    <string name="Login">Login</string>
+    <string name="NoInternet">No Internet Connection</string>
+    <string name="MakeSure">Make sure your wifi or Mobile data is On</string>
+    <string name="ok">OK</string>
+    <string name="Home">Home</string>
+    <string name="Profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Name">Your Name</string>
+    <string name="Choose">Choose to create</string>
+    <string name="Canvas">Blank Canvas</string>
+    <string name="Image">Edit Image</string>
+    <string name="color">Color</string>
+    <string name="Stickers">Sticker</string>
+    <string name="Brush">Brush</string>
+    <string name="Eraser">Eraser</string>
+    <string name="Retry">Retry</string>
+    <string name="OTP"> Enter OTP</string>
+    <string name="Verify">Verify</string>
+    <string name="Continue">Continue</string>
+    <string name="StartMaking">Start Making your thoughts !</string>
+    <string name="OR">OR</string>
+    <string name="ContinueWithMobile">Continue with Mobile No.</string>
+    <string name="EnterMobile">Enter Your Valid Mobile No.</string>
+    <string name="VerificationCode">A Verification Code Will be sent on your mobile number</string>
+    <string name="EnterCode">Enter Varification code</string>
+    <string name="Post">Post</string>
+    <string name="share">Share</string>
+    <string name="shareVia">Share Via</string>
+    <string name="editprofile">Edit Profile</string>
+    <string name="logout">Logout</string>
+    <string name="Sure">Are You Sure About This ?</string>
+    <string name="LogoutDetails">You will be logout from this device !</string>
+    <string name="cancel">cancel</string>
+    <string name="done">Done</string>
+    <string name="Collage">Collage</string>
+</resources>

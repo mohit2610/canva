@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "335632839816",
+    "project_id": "canva-d82af",
+    "storage_bucket": "canva-d82af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335632839816:android:5fc3e7aeff2f804fbd1b3d",
+        "android_client_info": {
+          "package_name": "com.example.justdraw"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335632839816-0d37r2nnqab3f9jbddln81am2c0k89pi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.justdraw",
+            "certificate_hash": "7fee0cd6dea0abed7a87305c187fc953c65d2420"
+          }
+        },
+        {
+          "client_id": "335632839816-g1rur3sgc32d1dqv6n7c8r9rca4vdu4o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7tdOHUi0fOhl8na6gaQVulKUJgKOxJk4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335632839816-g1rur3sgc32d1dqv6n7c8r9rca4vdu4o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
